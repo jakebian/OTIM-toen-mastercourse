@@ -1,6 +1,6 @@
 # Open Translations in Mathematics (OTIM): Toen's mastercourse on stacks
 
-A translation of [Toen's mastercourse on algebraic stacks](https://perso.math.univ-toulouse.fr/btoen/videos-lecture-notes-etc/) to English.
+An in-progress translation of [Toen's mastercourse on algebraic stacks](https://perso.math.univ-toulouse.fr/btoen/videos-lecture-notes-etc/) to English.
 
 ## OTIM (Open Translations in Mathematics)
 

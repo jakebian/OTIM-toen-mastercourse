@@ -1,0 +1,22 @@
+- title: 'Lecture 1: Reflections on the notion of Space I'
+  path: '/chapters/lecture1.tex'
+
+- title: 'Lecture 2: Reflections on the notion of Space II'
+  sub:
+    - title: 1. Geometric contexts
+    - title: 2. Manifolds
+    - title: 3. Geometric spaces
+
+- title: 'Lecture 3: Schemes and algebraic spaces I'
+
+- title: 'Lecture 4: Schemes and algebraic spaces II'
+
+- title: 'Lecture 5: Stacks I'
+
+- title: 'Lecture 6: Stacks II'
+
+- title: 'Lecture 7: Stacks III'
+
+- title: 'Lecture 8: Stacks IV'
+
+- title: 'Some exercises'

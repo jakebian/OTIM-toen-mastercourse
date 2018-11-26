@@ -33,7 +33,7 @@ subset U_i$, and the second morphism sends $U_{i, j}$ to $U_j$ via the natural i
     \bigsqcup_{i \in I} U_i \to X
 \]
 
-which are inclusions $U_i \subset X$. These coequalizes the two morphisms above. So we get a morphism of topological spaces
+which are inclusions $U_i \subset X$. This coequalizes the two morphisms above. So we get a morphism of topological spaces
 
 \[
 Colim\left(\bigsqcup_{(i, j) \in I^2} U_{i, j} \rightrightarrows \bigsqcup_{i \in I} U_i\right) \to X
@@ -61,9 +61,76 @@ The lemma says for a topological space $Y$, to give a morphism $f: X \to Y$ is t
 One can interpret the above lemma as follows: all topological manifolds are obtains as the colimit of a diagram of opens in $\mathbb R^n$ (for some $n$). We draw from this the following principle:
 
 \begin{prcp*}
-The category \textbf{TopMfld} of topological manifolds is.
+The category $TopMfd$ of topological manifolds is deduced from the category of opens in $\mathbb R^n$ (and continiuous maps.).
 \end{prcp*}
+
+this is the principle that we're going to clarify in the following.
+
 \section{Manifolds and sheaves}
+
+Let $C$ be the full subcategory of $TopMfd$ whose objects are opens of $\mathbb R^n$. We denote by $Pr(C)$ the category of presheaves of sets over $C$ (also denoted $\hat C$). We consider the Yoneda embedding restricted to $C$:
+
+\begin{align}
+h_{(-)}: VarTop &\to Pr(C)\\
+X &\mapsto h_X
+\end{align}
+
+where the presheaf $h_X$ is defined by
+
+\[
+h_X(Y) := Hom_{TopMfd}(Y, X)
+\]
+
+
+\begin{lem}
+    The functor $h_{(-)}$ above is fully faithful.
+\end{lem}
+
+\begin{proof}
+The functor is faithful: ...
+
+The functor is full: ...
+
+TODO: finish
+\end{proof}
+
+The lemma 2.1 is a good point of depature, for $TopMfd$ is identified as (is equivalent to) a full subcategory of $Pr(C)$. We seek a characterization of this subcategory.
+
+We start with $C$ a Grothendieck site by declaring a family of morphisms $\{U_i \to U\}_{i \in I}$ in C to be a covering family if each morphism $U_i \to U$ is an open immersion, and the total morphism $\sqcup_{i \in I} U_i \to U$ is surjective. This defines a pre-topology on $C$ (exercise: verify). The associated topology is denoted $\tau$.
+
+\begin{lem}
+    For all $X \in TopMfd$, the presheaf $h_X \in Pr(C)$ is a sheaf for the topology $\tau$.
+\end{lem}
+
+\begin{proof}
+    ...
+\end{proof}
+
+Lemma 2.2 implies we have a full and faithful functor
+
+\[
+h_{(-)}: TopMfld \to Sh(C, \tau)
+\]
+
+A sheaf isomorphic to $h_X$ is said to be representable by $X$. More generally we identify the category $TopMfd$ with its image in $Sh(C, \tau)$
+
+To chacaterize this image we make a definition
+
+\begin{defn}
+    \begin{enumerate}
+            \item A morphism $f: F \to G$ in $Sh(C, \tau)$ is a \textbf{local homeomphism} if for all $X \in C$, and all morphisms $h_X \to G$, the sheaf $F \times_G h_X$ is representable by some $Y \in TopMfd$, and the induced morphism $Y \to X$ by the projection $h_y \simeq F \times_G h_X \to h_X$ is a local homeomorphism of topological spaces.
+
+            \item A morphism in $Sh(C, \tau)$ is an \textbf{open immersion} if it's a monomorphism and a local homeomorphism.
+    \end{enumerate}
+\end{defn}
+
+It's easy to verify that open immersions in $Sh(C, \tau)$ are stable under compositions (Exercise: verify). One can also verify that local heomorphisms are stable under compositions, but this needs corrolary 2.5 below (Exercise: verify). We see also that a morphism of topological manifolds is a local homeomorphism if and only if $h_X \to h_Y$ is a local homeomorphism in the sense of the above definition (Exercise: verify).
+
+We then have the following proposition
+
+\begin{prop}
+    A sheaf 
+\end{prop}
 
 \section{Quotient manifolds}
 

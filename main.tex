@@ -1,7 +1,11 @@
 \documentclass{amsbook}
+\usepackage{subfiles}
 
-\include{includes/preamble}
-\include{includes/commands}
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+\input{includes/preamble}
+\input{includes/commands}
 \linespread{1.3}
 
 \renewcommand{\chaptername}{Lecture}
@@ -15,5 +19,5 @@
 \maketitle
 Translated from French by OTIM (Open Translations in Mathematics)
 \tableofcontents{}
-\include{chapters/lecture1}
+\subfile{chapters/lecture1}
 \end{document}

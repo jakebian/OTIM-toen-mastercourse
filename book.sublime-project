@@ -17,6 +17,7 @@
 				"*.cb",
 				"*.cb2",
 				"*.lb",
+				"*.sta",
 
 				// ## Intermediate documents:
 				"*.dvi",

@@ -1,0 +1,39 @@
+
+#!/bin/bash)
+
+## Core latex/pdflatex auxiliary files:
+find . -type f -name "*.aux" -delete
+find . -type f -name "*.lof" -delete
+find . -type f -name "*.log" -delete
+find . -type f -name "*.lot" -delete
+find . -type f -name "*.fls" -delete
+find . -type f -name "*.out" -delete
+find . -type f -name "*.toc" -delete
+find . -type f -name "*.fmt" -delete
+find . -type f -name "*.fot" -delete
+find . -type f -name "*.cb" -delete
+find . -type f -name "*.cb2" -delete
+find . -type f -name "*.sta" -delete
+
+## Intermediate documents:
+find . -type f -name "*.dvi" -delete
+find . -type f -name "*.xdv" -delete
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+find . -type f -name "*.bbl" -delete
+find . -type f -name "*.bcf" -delete
+find . -type f -name "*.blg" -delete
+find . -type f -name "*-blx.aux" -delete
+find . -type f -name "*-blx.bib" -delete
+find . -type f -name "*.run".xml -delete
+
+## Build tool auxiliary files:
+find . -type f -name "*.fdb_latexmk" -delete
+find . -type f -name "*.synctex" -delete
+find . -type f -name "*.synctex" -delete
+find . -type f -name "*.synctex.gz" -delete
+find . -type f -name "*.synctex.gz" -delete
+find . -type f -name "*.pdfsync" -delete
+
+# Built files
+find . -type f -name "*.pdf" -delete

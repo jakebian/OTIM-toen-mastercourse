@@ -3,7 +3,7 @@
 \begin{document}
 
 \setcounter{chapter}{0}
-\chapter{Reflections on the Notion of Space I WIRJ}
+\chapter{Reflections on the Notion of Space I}
 
 The purpose of these first lectures is to understand the notion of a manifold in different contexts (topological/differential/analytic manifolds). We begin in this first lecture by looking at the case of topological manifolds.
 
@@ -19,8 +19,50 @@ The purpose of these first lectures is to understand the notion of a manifold in
 
 \end{defn}
 
-Let $X$ be a topological manifold and $\{U_i\}_{i \in I}$ an open cover as in definition $1.1 (1)$. We write, for $i$ and $j$ in $I$, $U_{i,j} = U_n \cap U_j$.
+Let $X$ be a topological manifold and $\{U_i\}_{i \in I}$ an open cover as in definition $1.1 (1)$. We write, for $i$ and $j$ in $I$, $U_{i,j} = U_n \cap U_j$. There's a diagram of topological spaces
 
+\[
+    \bigsqcup_{(i, j) \in I^2} U_{i, j} \rightrightarrows \bigsqcup_{i \in I} U_i
+\]
+
+The first morphism sends $U_{i, j}$ to $U_i$ via the natural inclusion $U_{i,j}
+subset U_i$, and the second morphism sends $U_{i, j}$ to $U_j$ via the natural inclusion $U_{i, j}
+\subset U_j$. There's also another morphism
+
+\[
+    \bigsqcup_{i \in I} U_i \to X
+\]
+
+which are inclusions $U_i \subset X$. These coequalizes the two morphisms above. So we get a morphism of topological spaces
+
+\[
+Colim\left(\bigsqcup_{(i, j) \in I^2} U_{i, j} \rightrightarrows \bigsqcup_{i \in I} U_i\right) \to X
+\]
+
+The important fact is the following
+
+\begin{lem}
+
+The morphism
+
+\[
+Colim\left(\bigsqcup_{(i, j) \in I^2} U_{i, j} \rightrightarrows \bigsqcup_{i \in I} U_i\right) \to X
+\]
+
+is an isomorphism.
+\end{lem}
+
+\begin{proof}
+The lemma says for a topological space $Y$, to give a morphism $f: X \to Y$ is the same as choosing, for each given $i \in I$, a morphism $f_i: U_i \to Y$ such that $(f_i)|_{U_{i, j}} = (f_j)|_{U_{i, j}}$ for all $(i, j) \in I^2$.
+
+(Exercise: provide the details.)
+\end{proof}
+
+One can interpret the above lemma as follows: all topological manifolds are obtains as the colimit of a diagram of opens in $\mathbb R^n$ (for some $n$). We draw from this the following principle:
+
+\begin{prcp*}
+The category \textbf{TopMfld} of topological manifolds is.
+\end{prcp*}
 \section{Manifolds and sheaves}
 
 \section{Quotient manifolds}

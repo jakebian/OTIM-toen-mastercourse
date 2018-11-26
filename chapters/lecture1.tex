@@ -118,7 +118,7 @@ To chacaterize this image we make a definition
 
 \begin{defn}
     \begin{enumerate}
-            \item A morphism $f: F \to G$ in $Sh(C, \tau)$ is a \textbf{local homeomphism} if for all $X \in C$, and all morphisms $h_X \to G$, the sheaf $F \times_G h_X$ is representable by some $Y \in TopMfd$, and the induced morphism $Y \to X$ by the projection $h_y \simeq F \times_G h_X \to h_X$ is a local homeomorphism of topological spaces.
+            \item A morphism $f: F \to G$ in $Sh(C, \tau)$ is a \textbf{local homeomphism} if for all $X \in C$, and all morphisms $h_X \to G$, the sheaf $F \times_G h_X$ is representable by some $Y \in TopMfd$, and the induced morphism $Y \to X$ by the projection $h_y \simeq F \times_G h_X \to h_X$ is a local homeomorphism of topological spaces \footnote{Recall: a continuous map of topological spaces is a local homeomorphism if for each $x \in X$, there exists $U$ an open neighborhood of $x$ in $X$ and $V$ and open neighborhood of $f(x)$ in Y, such that $f$ induces a homeomorphism from $U \to V$}.
 
             \item A morphism in $Sh(C, \tau)$ is an \textbf{open immersion} if it's a monomorphism and a local homeomorphism.
     \end{enumerate}
@@ -129,11 +129,73 @@ It's easy to verify that open immersions in $Sh(C, \tau)$ are stable under compo
 We then have the following proposition
 
 \begin{prop}
-    A sheaf 
+    A sheaf $F \in Sh(C, \tau)$ is representable by a topological manifold (i.e. $F \simeq h_X$ for some $X \in TopMfd$), if there exists a family $\{U_i\}_{i \in I}$ of objects in $C$, and a morphism of sheaves
+
+    \[
+        p: \bigsqcup_{i \in I} h_{U_i} \to F
+    \]
+    satisfying the following two conditions
+
+    \begin{enumerate}
+        \item The morphism $p$ is an epimorphism of sheaves.
+        \item For all $i \in I$, the morphism $U_i \to F$ is an open immersion (in the sense of definition 2.3)
+    \end{enumerate}
 \end{prop}
+
+\begin{proof}
+\end{proof}
+
+\begin{cor}
+    Let $X \in TopMfd$, and $F \to h_X$ a morphism of sheaves. If there exists an open cover of $X$ such that for all $i \in I$, the sheaf $f \times_{h_X} h_{U_i}$ is representable by a topological manifold, then $F$ is representable by a topological manifold.
+\end{cor}
+\begin{proof}
+    For all $i \in I$, choose ${V_{i, j}}_{j \in J}$...
+\end{proof}
+
 
 \section{Quotient manifolds}
 
+Let G be a (discrete) group acting on a topological manifold $X \in TopMfd$. By functoriality, the group $G$ acts on the sheaf $h_X$. Recall a group action on X is ... . Recall also a group action $G$ on $X$ is properly discontinuous if all points $x \in X$ has an open neighborhood $U \subset X$ such that for all $g \in G$, we have
+
+\[
+    g(U) \cap U \ne \emptyset \implies (g = e)
+\]
+
+In the following, we will take care not to confuse the sheaf quotient $h_X/G$ and the sheaf $h_{X/G}$ represented by the quotient topological space.
+
+\begin{prop}
+    \begin{enumerate}
+            \item If the action $G$ on $X$ is free, the the quotient morphism
+            \[h_X \to h_X/G\] is a local homeomorphism
+            \item If the action $G$ on $X$ is properly discontinuous, then the quotient $h_X/G \in Sh(C, \tau)$ is a topological manifold.
+    \end{enumerate}
+\end{prop}
+\begin{proof}
+...
+\end{proof}
+
 \section{Shortcomings of manifolds}
+
+The proposition 3.1 is a good reason for cosntructing examples of topological manifolds by properly discontinuous actions. However, when $G$ acts on a manifold $X$ but the action is not propertly discontinuous, the topological space quotient $X/G$ is in general very pathological. The sheaf quotient $h_X/G$. The sheaf quotient $h_X/G$ has good properties (e.g. point (1) of proposition 3.1) similar to representability of a topological manifold.
+
+An example is the following: we take the action of the discrete group $\mathbb Q$ (under addition on the topological space $\mathbb R$ via the morphism
+
+\[\mathbb R \times \mathbb Q \to \mathbb R\]
+
+given by $(x, t) \mapsto x + t$. We note this action is free, but not properly discontinuous. IN addition, the morphism $\mathbb R \to \mathbb R / \mathbb Q$ is not a local homeomorphism nor is it locally injective. Finally, the topological space quotient $\mathbb R / \mathbb Q$ has a gross topology. We see that the quotient $\mathbb R/ \mathbb Q$ is not a reasonable object from the point of view of geometry. On the otherhand, the sheaf quotient $h_\mathbb R/\mathbb Q$ is more interesting, for the morphisms $h_\mathbb R \to h_\mathbb R / \mathbb Q$ is a local homeomorphism. The sheaf $h_\mathbb R / \mathbb Q$ is a primary example of a geometric space
+
+\begin{defn}
+    A sheaf $F \in Sh(C, \tau)$ is a geometric space if there exists a family of objects $\{U_i\}_{i \in I}$ of $C$, and a morphism of sheaves
+
+    \[
+        p: \bigsqcup_{i \in I} h_{U_i} \to F
+    \]
+    satisfies the following two conditions
+
+    \begin{enumerate}
+        \item The morphism $p$ is an epimorphism of sheaves
+        \item For all $i\in I$, the morphism $U_i \to F$ is a local homeomorphism.
+    \end{enumerate}
+\end{defn}
 
 \end{document}

@@ -4,9 +4,9 @@ A translation of [Toen's mastercourse on algebraic stacks](https://perso.math.un
 
 ## OTIM (Open Translations in Mathematics)
 
-OTIM is a in-progress project described [here](https://twitter.com/jakebian/status/1066727892732784640). The idea is the following
+OTIM is a in-progress project described [here](https://twitter.com/jakebian/status/1066727892732784640). In short:
 
-     the big idea is to have a network of "translation projects", each its own repo with some consistent structure. A master build system keeps track of the network of projects, tracks progress, and makes the compiled result available to everyone.
+> The big idea is to have a network of "translation projects", each its own repo with some consistent structure. A master build system keeps track of the network of projects, tracks progress, and makes the compiled result available to everyone.
 
 This repository is the first to implement file organization and meta files supporting this new build system.
 

@@ -1,1 +1,0 @@
-pdflatex -jobname=ch1 "\includeonly{includes/preamble,includes/commands,chapters/1-etale-morphisms}\input{main}"

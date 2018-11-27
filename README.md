@@ -10,7 +10,6 @@ OTIM is a in-progress project described [here](https://twitter.com/jakebian/stat
 
 This repository is the first to implement file organization and meta files supporting this new build system.
 
-
 ## Credits
 
 Skeleton of the latex project is mostly borrowed from the [SGA-I translation project](https://github.com/jmoellermath/translate-SGAI).

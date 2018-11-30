@@ -1,0 +1,98 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\setcounter{chapter}{5}
+
+\chapter{Stacks I}
+
+We recall that for a category $C$ and a subset $W \subset C_1$ of morphisms in $C$, a localization of $C$ along $W$ is a category $W^{-1}C$ with a functor $l: C \to W^{-1}C$ such that for all other categories $D$, the functor
+
+\[
+l^*: \underline{Hom}(W^{-1}C, D),  \underline{Hom}(C, D)
+\]
+
+is full and faithful, and the essential image consists of functors $C \to D$ sending $W$ to isomorphisms in $D$. If a localization exists it's unique up to isomorphism.
+
+
+\section{Homotopy theory of groupoids}
+
+We consider the case where $C = Gpd$, the category of groupoids (i.e. objects are groupoids and morphisms are functors of groupoids). We take $W$ the subset of equivalence of groupoids (i.e. the functors that are equivalences of category) and we we consider the category $W^{-1}Gpd$.
+
+\begin{defn}
+    The homotopy category of groupoids is the localization $W^{-1}Gpd$. We also write $Ho(Gpd)$. The set of morphisms in $Ho(Gpd)$ between objects $A$ and $B$ is denoted $[A, B]$.
+\end{defn}
+
+We now denote [Gpd] the category where objects are groupoids, and for groupoids $A$ and $B$, the sect of morphisms between $A$ and $B$ in $[Gpd[$ is by definition the set of isomorphism classes of functors from $A$ to $B$. There's a natural projection $p: Gpd \to [Gpd]$, which is the identity on objects and the canonical projection on morphism sets. Exercise: write down compositions in $[Gpd]$
+
+
+\begin{thm}
+    The natural project
+    \[
+        p: Gpd \to [Gpd]
+    \]
+    is a localization of $Gpd$ along $W$. It follows that $p$ induces a natural equivalence
+
+    \[
+        Ho(Gpd) \simeq [Gpd]
+    \]
+
+\end{thm}
+
+\begin{proof}
+...
+\end{proof}
+
+\begin{cor}
+    The natural functor
+    \[
+        j: Set \to Gpd \to Ho(Gpd)
+    \]
+    sending a set to the corresponding discrete groupoid, is full and faithful, and has a left adjoint:
+    \[
+        \pi_0: Ho(Gpd) \to Set
+    \]
+\end{cor}
+
+\begin{proof}
+...
+\end{proof}
+
+Exercise: Let $G$ and $H$ be groups. We write $BG$ (resp. $BH$) the groupoids with a single object and $G$ (and $H$) group of automorphisms of the object. Describe the set $[BG, BH]$ of morphisms in the category Ho(Gpd).
+
+\section{Homotopy theory of diagrams of groupoids}
+
+Let $I$ be a category, and consider $\underline{Hom}(I, Gpd)$ the category of functors from $I$ to $Gpd$ (also called the category of $I$-diagrams in $Gpd$). Take $F, G: I \to Gpd$ two $I$-diagrams. A morphism
+\[
+    f: F \to G
+\]
+is a equivalence if on each object $i\in I$, the induced morphism
+
+\[
+f_i: F(i) \to G(i)
+\]
+is an equivalence of groupoids. This defines the class $W_I$ of weak equivalences in $\underline{Hom}(I, Gpd)$.
+\begin{defn}
+    The homotopy category of $I$-diagrams of groupoids is $W_I^{-1}\underline{Hom}(I, Gpd)$. Also denoted $Ho(\underline{Hom}(I, Gpd))$. The set of morphisms in $W_I^{-1}\underline{Hom}(I, Gpd)$ from $F$ to $G$ is denoted $[F, G]$.
+\end{defn}
+
+To generalization of theorem 1.2. to the case of digrams of groupoids, we need to introduce the notion of weak morphisms between objects in $\underline{Hom}(I, Gpd)$. For this, we denote, for $F \in \underline{Hom}(I, Gpd)$, and for morphisms $u: i \to j$ in $I$, $u_*^F: F(i) \to F(j)$ the functor induced by $u$. Note by definition, $(u^f \circ v^f)_* = u_*^F \circ v_*^f$ and $id_*^F = id$.
+
+\begin{thm}
+    The natural functor
+    \[
+        \underline{Hom}(I, Gpd) \to [\underline{Hom}(I, Gpd)]
+    \]
+    induces an equivalence
+    \[
+        Ho(\underline{Hom}(I, Gpd) \simeq [\underline{Hom}(I, Gpd)]
+    \]
+
+\end{thm}
+
+
+
+\section{Homotopy limits}
+\section{Homotopy categories of prestacks and stacks}
+
+\end{document}

@@ -92,7 +92,7 @@
 			]
 		]
 	],
-	"build_varint": "PdfLaTeX",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -234,6 +234,8 @@
 	],
 	"file_history":
 	[
+		"/Users/jake/otim/nodes/toen-mastercourse/chapters/lecture5.tex",
+		"/Users/jake/otim/nodes/toen-mastercourse/book.sublime-project",
 		"/Users/jake/otim/nodes/toen-mastercourse/main.tex",
 		"/Users/jake/otim/nodes/toen-mastercourse/common/preamble.tex",
 		"/Users/jake/otim/nodes/toen-mastercourse/chapters/lecture1.tex",
@@ -242,7 +244,6 @@
 		"/Users/jake/otim/nodes/toen-mastercourse/.otim/content.yaml",
 		"/Users/jake/otim/nodes/toen-mastercourse/chapters/lecture2-3.tex",
 		"/Users/jake/otim/nodes/toen-mastercourse/README.md",
-		"/Users/jake/otim/nodes/toen-mastercourse/book.sublime-project",
 		"/Users/jake/otim/nodes/toen-mastercourse/clean",
 		"/Users/jake/otim/nodes/toen-mastercourse/.gitignore",
 		"/Users/jake/otim/nodes/toen-mastercourse/includes/commands.tex",
@@ -360,12 +361,11 @@
 		"/Users/jake/te/webapps/java-common/src/java/com/thousandeyes/common/topology/service/TopologyService.java",
 		"/Users/jake/te/webapps/java-common/src/java/com/thousandeyes/common/devicemanager/timeline/DeviceTimelineOptionsService.java",
 		"/Users/jake/te/webapps/frontend/src/java/com/thousandeyes/views/devicemanager/DeviceManagerTimelineController.java",
-		"/Users/jake/te/webapps/api/src/java/com/thousandeyes/api/machines/NetworkTopologyController.java",
-		"/Users/jake/te/webapps/java-common/src/java/com/thousandeyes/common/devicemanager/timeline/DeviceTimelineOptions.java"
+		"/Users/jake/te/webapps/api/src/java/com/thousandeyes/api/machines/NetworkTopologyController.java"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -419,7 +419,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -464,7 +464,7 @@
 	"project": "book.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -12,6 +12,7 @@
   path: '/chapters/lecture3.tex'
 
 - title: 'Lecture 4: Schemes and algebraic spaces II'
+  path: '/chapters/lecture4.tex'
 
 - title: 'Lecture 5: Stacks I'
   path: '/chapters/lecture5.tex'

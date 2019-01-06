@@ -1,0 +1,57 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\setcounter{chapter}{4}
+
+\chapter{Schemes and algebraic spaces II}
+
+Recall the category $Aff$ is the opposite of commutative rings equipped with the etale topolgoy $et$. We simply write $Sh(Aff)$ for the category of sheaves over the site $(Aff, et)$. We define three subcategories
+
+\[
+    \{\text{Affine schemes}\}
+    \subset
+    \{\text{Schemes}\}
+    \subset
+    \{\text{Algebraic Spaces}\}
+    \subset
+    \{\text{Sh(Aff)}\}
+\]
+
+In this lecture we see some examples of affine schemes, of schemes and of algebraic spaces. We note also examples of sheaves that are not algebraic spaces, but have a good geometric nature in a certain sense.
+
+\section{Some properties of morphisms}
+
+We recall the notion of smooth and etale morphisms for affine schemes discussed in lecfture 3. The definition some notions of morphisms for schemes and algebraic spaces. We ... the following lecture on algebraic stacks.
+
+\begin{defn}
+    \begin{enumerate}
+        \item A morphism $F \to G$ in $Sh(Aff)$ is a representable by a scheme (resp. by an algebraic space, resp. by an affine scheme) if for any affine scheme $X$ and any morphism $X \to G$, the sheaves $F \times_GX$ is a scheme (resp. an algebraic space, resp. an affine scheme). A morphism representable by an affine scheme is also called an affine morphism
+
+        \item A morphism $F \to G$ in $Sh(Aff)$ is smooth (resp. etale) if it's representable by an algebraic space and in addition for any affine scheme $X$ and any morphism $X \to G$, there exists an atlas $\{U_i\}$ for $F \times_G X$ such that the composite morphisms $U_i \to X$ are smooth (resp. etale) morphisms of affine schemes.
+
+        \item A morphism $F \to G$ in $Sh(Aff)$ is an open immersion if it's an etale monomorphism.
+
+        \item A morphism $F \to G$ in $Sh(Aff)$ is a closed immersion if it's an affine morphisms and for any affine scheme $X = Spec A$ and for all morphisms $X \to G$, the morphism of affine schemes
+        \[
+            F \times_G X \simeq Spec B \to Spec A
+        \]
+
+        correspond to a surjective morphism of rings $A \to B$
+    \end{enumerate}
+\end{defn}
+
+We verify that the above notions are stable under change of bases and compoisition.
+
+\begin{prop}
+    \item Let $X$ be a scheme (resp. an algebraic space) and $F \to X$ a morphism in $Sh(Aff)$. Suppose there's an open atlas $\{U_i\}$ of $X$ and for all $i$ the sheaves $U_i \times_XF$ is a scheme (resp an algebraic space). Then $F$ is a scheme (resp. an algebraic space).
+    \item The subcategories of $Sh(Aff)$ formed by affine schemes, scheme and algebraic spaces are closed under finite limits.
+    \item Let $F \to G$ be a morphism representable by a scheme (resp. by an algebraic space or affine scheme). If $G$ is a scheme (resp. algebraic space, affine scheme), then so if $F$
+\end{prop}
+\begin{proof}
+    Exercise.
+\end{proof}
+
+
+
+\end{document}
